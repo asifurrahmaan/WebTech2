@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Donation Form</title>
+</head>
+
+<body>
+
+    <form method="post">
+
+        <h1>Donor Information</h1>
+
+        <table>
+            <tr>
+                <td><b>First Name*:</b></td>
+                <td><input type="text" name="fname" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Last Name*:</b></td>
+                <td><input type="text" name="lname" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Company:</b></td>
+                <td><input type="text" name="company"></td>
+            </tr>
+
+            <tr>
+                <td><b>Address 1*:</b></td>
+                <td><input type="text" name="address1" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Address 2:</b></td>
+                <td><input type="text" name="address2"></td>
+            </tr>
+
+            <tr>
+                <td><b>City*:</b></td>
+                <td><input type="text" name="city" required></td>
+            </tr>
+
+            <tr>
+                <td><b>State*:</b></td>
+                <td>
+                    <select name="state" required>
+                        <option value="">Select a State</option>
+                        <option>Dhaka</option>
+                        <option>Chittagong</option>
+                        <option>Khulna</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Zip Code*:</b></td>
+                <td><input type="text" name="zip" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Country*:</b></td>
+                <td>
+                    <select name="country" required>
+                        <option value="">Select a Country</option>
+                        <option>Bangladesh</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Phone:</b></td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+
+            <tr>
+                <td><b>Fax:</b></td>
+                <td><input type="text" name="fax"></td>
+            </tr>
+
+            <tr>
+                <td><b>Email*:</b></td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Donation Amount*:</b></td>
+                <td>
+                    <input type="radio" name="amount" value="none" checked>None
+                    <input type="radio" name="amount" value="50">$50
+                    <input type="radio" name="amount" value="75">$75
+                    <input type="radio" name="amount" value="100">$100
+                    <input type="radio" name="amount" value="250">$250
+                    <input type="radio" name="amount" value="other">Other
+                    <br> <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>(Check a button or type in your amount)</td>
+                <td>
+                    <b>Other Amount $</b>
+                    <input type="text" name="other">
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Recurring Donation</b></td>
+                <td>
+                    <input type="checkbox" name="recurring">
+                    I am interested in giving on a regular basis.
+                </td>
+            </tr>
+
+            <tr>
+                <td>(Check if yes)</td>
+                <td>
+                    Monthly Credit Card $
+                    <input type="text" name="monthly" size="5">
+                    For
+                    <input type="text" name="months" size="5">
+                    Months
+                </td>
+            </tr>
+        </table>
+
+        <h2>Honorarium and Memorial Donation Information</h2>
+
+        <table>
+            <tr>
+                <td><b>I would like to make this donation</b></td>
+                <td>
+                    <input type="radio" name="donation" value="honor"> To Honor
+                    <br>
+                    <input type="radio" name="donation" value="memory"> In Memory of
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Name:</b></td>
+                <td><input type="text" name="honorname"></td>
+            </tr>
+
+            <tr>
+                <td><b>Acknowledge Donation to:</b></td>
+                <td><input type="text" name="acknowledge"></td>
+            </tr>
+
+            <tr>
+                <td><b>Address:</b></td>
+                <td><input type="text" name="honoraddress"></td>
+            </tr>
+
+            <tr>
+                <td><b>City:</b></td>
+                <td><input type="text" name="honorcity"></td>
+            </tr>
+
+            <tr>
+                <td><b>State:</b></td>
+                <td>
+                    <select name="honorstate">
+                        <option>Select a State</option>
+                        <option>Dhaka</option>
+                        <option>Chittagong</option>
+                        <option>Khulna</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Zip:</b></td>
+                <td><input type="text" name="honorzip"></td>
+            </tr>
+        </table>
+        <tr>
+            <td></td>
+            <td>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Continue">
+            </td>
+        </tr>
+</body>
+
+</html>
